@@ -1,49 +1,40 @@
-# Pong Game with a Single Button Control
+# Jeu de Pong avec un seul bouton de contrôle
 
 ## Description
 
-This project is an implementation of the classic Pong game on a Raspberry Pi Pico with an OLED screen. The goal of the game is to bounce the ball using the paddle by controlling its position with a single button. When the button is pressed, the paddle moves up, and when released, the paddle moves down. The game pits the player against an AI that controls the opposing paddle.
+Ce projet est une implémentation du jeu de Pong sur une Raspberry Pi Pico avec un écran OLED. Le but du jeu est de renvoyer la balle avec la palette en contrôlant sa position à l'aide d'un seul bouton. Lorsque le bouton est pressé, la palette se déplace vers le haut, et lorsqu'il est relâché, la palette descend. Le jeu oppose un joueur contre une IA qui contrôle la palette de l'autre côté de l'écran.
 
-## Features
+## Fonctionnalités
 
-- Control the player's paddle with a single button: press to move up and release to move down.
-- The computer's paddle is controlled automatically by an AI to follow the ball.
-- Ball and paddles are displayed on an OLED screen.
-- A scoring system displays the player's and computer's scores.
-- After each point, the game resets with a short pause to display the scores.
+- Contrôle de la palette du joueur avec un seul bouton : appuyez pour déplacer la palette vers le haut et relâchez pour la déplacer vers le bas.
+- La palette de l'ordinateur est contrôlée automatiquement par une IA pour suivre la balle.
+- Affichage de la balle et des palettes sur un écran OLED.
+- Un système de score affiche les scores du joueur et de l'ordinateur.
+- Réinitialisation du jeu après chaque point marqué avec une brève pause pour afficher les scores.
 
-## Required Hardware
+## Matériel Requis
 
 - Raspberry Pi Pico
-- 128x64 OLED display (I2C compatible)
-- 1 push-button
-- Resistor (10kΩ for pull-up)
-- Jumper wires
+- Écran OLED 128x64 (compatible I2C)
+- 1 bouton-poussoir
+- Câbles de connexion
 
 ## Installation
 
-1. **Install MicroPython** on the Raspberry Pi Pico (if not already done).
-2. Use **Thonny** or any compatible MicroPython editor to program the Raspberry Pi Pico.
-3. **Copy the game file** (e.g., `pong.py`) to the Pico.
-4. **Run the script**.
+1. **Installer MicroPython** sur la Raspberry Pi Pico (si ce n'est pas déjà fait).
+2. Utiliser **Thonny** ou un autre éditeur compatible MicroPython pour programmer la Raspberry Pi Pico.
+3. **Copier le fichier** du jeu (par exemple `pong.py`) sur la Pico.
+4. **Exécuter le script**.
 
-## Usage
+## Utilisation
 
-1. The OLED screen will display the game field with the player's and computer's paddles, and the ball.
-2. **Press the button** to move the player's paddle up.
-3. **Release the button** to move the paddle down.
-4. The computer's paddle will automatically follow the ball.
-5. After each point, the score will be displayed, and the ball will reset to the center of the field.
+1. L'écran OLED affichera le terrain de jeu avec les palettes du joueur et de l'ordinateur, ainsi que la balle.
+2. **Appuyez sur le bouton** pour déplacer la palette du joueur vers le haut.
+3. **Relâchez le bouton** pour déplacer la palette du joueur vers le bas.
+4. La palette de l'ordinateur suivra automatiquement la balle.
+5. Le jeu affiche les scores après chaque point et réinitialise la balle au centre du terrain.
 
-## Possible Improvements
-
-- Add sound effects for ball collisions or when points are scored.
-- Implement a multiplayer mode with two buttons for paddle control.
-- Introduce increasing difficulty by making the AI faster as the player scores points.
-- Display the score on an LCD or 7-segment display.
-- Add a timed challenge mode to score points within a limited time.
-
-## Authors
+## Auteurs
 
 - **Raphaël Parone**
-- **Alain Sliman** - Development & Documentation
+- **Alain Sliman** - Développement & Documentation
