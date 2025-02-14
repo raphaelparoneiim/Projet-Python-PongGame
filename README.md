@@ -1,46 +1,49 @@
-Jeu de Pong avec un seul bouton de contrôle
+# Pong Game with a Single Button Control
 
-Description
+## Description
 
-Ce projet est une implémentation du jeu de Pong sur une Raspberry Pi Pico avec un écran OLED. Le but du jeu est de renvoyer la balle avec votre palette en contrôlant sa position à l'aide d'un seul bouton. Lorsque le bouton est pressé, la palette se déplace vers le haut, et lorsqu'il est relâché, la palette descend. Le jeu oppose un joueur contre une IA qui contrôle la palette de l'autre côté de l'écran.
+This project is an implementation of the classic Pong game on a Raspberry Pi Pico with an OLED screen. The goal of the game is to bounce the ball using the paddle by controlling its position with a single button. When the button is pressed, the paddle moves up, and when released, the paddle moves down. The game pits the player against an AI that controls the opposing paddle.
 
-Fonctionnalités
+## Features
 
-Contrôle de la palette du joueur avec un seul bouton : appuyez pour déplacer la palette vers le haut et relâchez pour la déplacer vers le bas.
-Déplacement automatique de la palette de l'IA pour suivre la balle.
-Affichage de la balle et des palettes sur un écran OLED.
-Système de score affichant le score du joueur et de l'ordinateur.
-Réinitialisation du jeu après chaque point marqué avec une brève pause pour afficher les scores.
-Matériel Requis
+- Control the player's paddle with a single button: press to move up and release to move down.
+- The computer's paddle is controlled automatically by an AI to follow the ball.
+- Ball and paddles are displayed on an OLED screen.
+- A scoring system displays the player's and computer's scores.
+- After each point, the game resets with a short pause to display the scores.
 
-Raspberry Pi Pico
-Écran OLED 128x64 (compatible I2C)
-1 bouton-poussoir
-Résistance (10kΩ pour la pull-up)
-Câbles de connexion
-Installation
+## Required Hardware
 
-Installer MicroPython sur la Raspberry Pi Pico (si ce n'est pas déjà fait).
-Utiliser Thonny ou un autre éditeur compatible MicroPython pour programmer la Raspberry Pi Pico.
-Copier le fichier contenant le code du jeu sur la Pico (par exemple pong.py).
-Exécuter le script.
-Utilisation
+- Raspberry Pi Pico
+- 128x64 OLED display (I2C compatible)
+- 1 push-button
+- Resistor (10kΩ for pull-up)
+- Jumper wires
 
-L'écran OLED affichera le terrain de jeu avec les palettes du joueur et de l'ordinateur, ainsi que la balle.
-Appuyez sur le bouton pour déplacer la palette du joueur vers le haut.
-Relâchez le bouton pour déplacer la palette du joueur vers le bas.
-L'ordinateur contrôle automatiquement la palette de l'autre côté de l'écran.
-Le jeu affiche les scores après chaque point et réinitialise la balle au centre du terrain.
-Améliorations Possibles
+## Installation
 
-Ajouter des effets sonores lors des collisions ou des points.
-Ajouter un mode multijoueur avec deux boutons pour le contrôle des palettes.
-Implémenter un système de difficulté croissante où l'IA devient plus rapide à mesure que le joueur marque des points.
-Afficher le score sur un écran LCD ou un affichage 7 segments.
-Ajouter un mode de jeu avec un temps limité pour marquer des points.
+1. **Install MicroPython** on the Raspberry Pi Pico (if not already done).
+2. Use **Thonny** or any compatible MicroPython editor to program the Raspberry Pi Pico.
+3. **Copy the game file** (e.g., `pong.py`) to the Pico.
+4. **Run the script**.
 
-Auteurs
+## Usage
 
-Alain Sliman
-Raphaël Parone
+1. The OLED screen will display the game field with the player's and computer's paddles, and the ball.
+2. **Press the button** to move the player's paddle up.
+3. **Release the button** to move the paddle down.
+4. The computer's paddle will automatically follow the ball.
+5. After each point, the score will be displayed, and the ball will reset to the center of the field.
 
+## Possible Improvements
+
+- Add sound effects for ball collisions or when points are scored.
+- Implement a multiplayer mode with two buttons for paddle control.
+- Introduce increasing difficulty by making the AI faster as the player scores points.
+- Display the score on an LCD or 7-segment display.
+- Add a timed challenge mode to score points within a limited time.
+
+## Authors
+
+- **Raphaël Parone**
+- **Alain Sliman** - Development & Documentation
