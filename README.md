@@ -1,4 +1,4 @@
-# Jeu de Pong avec un seul bouton de contrôle
+# Jeu Pong
 
 ## Description
 
