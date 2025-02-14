@@ -37,4 +37,4 @@ Ce projet est une implémentation du jeu de Pong sur une Raspberry Pi Pico avec 
 ## Auteurs
 
 - **Raphaël Parone**
-- **Alain Sliman** - Développement & Documentation
+- **Alain Sliman**
