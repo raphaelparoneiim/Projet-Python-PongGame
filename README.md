@@ -40,6 +40,7 @@ Afficher le score sur un écran LCD ou un affichage 7 segments.
 Ajouter un mode de jeu avec un temps limité pour marquer des points.
 
 Auteurs
+
 Alain Sliman
 Raphaël Parone
 
