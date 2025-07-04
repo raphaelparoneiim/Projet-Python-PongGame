@@ -66,10 +66,3 @@ La partie se joue en **1v1 contre l’ordinateur** :
 
 - 👨‍💻 Raphaël Parone
 - 👨‍💻 Alain Sliman
-
----
-
-## 📄 Licence
-
-Projet libre d'utilisation à des fins pédagogiques ou personnelles 🧠  
-Ajoutez une licence si vous souhaitez le p
