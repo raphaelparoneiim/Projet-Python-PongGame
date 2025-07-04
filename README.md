@@ -1,40 +1,75 @@
-# Jeu Pong
+# 🕹️ Pong – Raspberry Pi Pico Edition
 
-## Description
+Ce projet est une implémentation minimaliste et fun du célèbre jeu **Pong**, développée pour une **Raspberry Pi Pico** avec un écran **OLED 128x64**.  
+Le joueur contrôle sa palette à l’aide **d’un seul bouton** : appui = monter, relâchement = descendre. L’autre palette est gérée par une **IA**.
 
-Ce projet est une implémentation du jeu de Pong sur une Raspberry Pi Pico avec un écran OLED. Le but du jeu est de renvoyer la balle avec la palette en contrôlant sa position à l'aide d'un seul bouton. Lorsque le bouton est pressé, la palette se déplace vers le haut, et lorsqu'il est relâché, la palette descend. Le jeu oppose un joueur contre une IA qui contrôle la palette de l'autre côté de l'écran.
+---
 
-## Fonctionnalités
+## 🎮 Description
 
-- Contrôle de la palette du joueur avec un seul bouton : appuyez pour déplacer la palette vers le haut et relâchez pour la déplacer vers le bas.
-- La palette de l'ordinateur est contrôlée automatiquement par une IA pour suivre la balle.
-- Affichage de la balle et des palettes sur un écran OLED.
-- Un système de score affiche les scores du joueur et de l'ordinateur.
-- Réinitialisation du jeu après chaque point marqué avec une brève pause pour afficher les scores.
+Le but est simple : empêcher la balle de franchir votre côté de l’écran.  
+La partie se joue en **1v1 contre l’ordinateur** :
 
-## Matériel Requis
+- 🟢 Le **joueur** contrôle une palette avec un **bouton unique**
+- 🔴 L’**IA** contrôle automatiquement l’autre palette
+- 🟡 L’écran OLED affiche le jeu, les scores et les rebonds
+- ⚡ Un système de score est intégré avec **pause automatique** après chaque point
 
-- Raspberry Pi Pico
-- Écran OLED 128x64 (compatible I2C)
-- 1 bouton-poussoir
-- Câbles de connexion
+---
 
-## Installation
+## ✨ Fonctionnalités
 
-1. **Installer MicroPython** sur la Raspberry Pi Pico (si ce n'est pas déjà fait).
-2. Utiliser **Thonny** ou un autre éditeur compatible MicroPython pour programmer la Raspberry Pi Pico.
-3. **Copier le fichier** du jeu (par exemple `pong.py`) sur la Pico.
-4. **Exécuter le script**.
+- 🎛️ Contrôle avec **un seul bouton** :  
+  - Appuyer = palette vers le haut  
+  - Relâcher = palette vers le bas  
+- 🤖 **IA** qui suit la balle intelligemment  
+- 📺 Affichage du terrain, des palettes et de la balle en temps réel  
+- 🧠 Système de **score automatique**  
+- 🔄 Réinitialisation automatique après chaque point marqué  
 
-## Utilisation
+---
 
-1. L'écran OLED affichera le terrain de jeu avec les palettes du joueur et de l'ordinateur, ainsi que la balle.
-2. **Appuyez sur le bouton** pour déplacer la palette du joueur vers le haut.
-3. **Relâchez le bouton** pour déplacer la palette du joueur vers le bas.
-4. La palette de l'ordinateur suivra automatiquement la balle.
-5. Le jeu affiche les scores après chaque point et réinitialise la balle au centre du terrain.
+## 🧰 Matériel Requis
 
-## Auteurs
+- 🧠 Raspberry Pi Pico  
+- 🖥️ Écran OLED 128x64 (I2C)  
+- 🔘 1 bouton-poussoir  
+- 🔌 Câbles de connexion (Dupont)  
+- 🧪 Breadboard (optionnel)
 
-- **Raphaël Parone**
-- **Alain Sliman**
+---
+
+## ⚙️ Installation
+
+1. Installer **MicroPython** sur la Raspberry Pi Pico  
+2. Ouvrir **Thonny** (ou tout éditeur compatible MicroPython)  
+3. Brancher la Pico en mode BOOTSEL  
+4. Copier le fichier `pong.py` dans la mémoire de la Pico  
+5. Exécuter le script
+
+---
+
+## ▶️ Utilisation
+
+- L’écran OLED affiche :
+  - La **balle**
+  - Les **palettes**
+  - Les **scores**
+- Contrôle :
+  - **Appui sur le bouton** → montée de la palette
+  - **Relâchement** → descente de la palette
+- Après chaque point, le score s’affiche brièvement puis une **nouvelle manche** démarre
+
+---
+
+## 👥 Auteurs
+
+- 👨‍💻 Raphaël Parone
+- 👨‍💻 Alain Sliman
+
+---
+
+## 📄 Licence
+
+Projet libre d'utilisation à des fins pédagogiques ou personnelles 🧠  
+Ajoutez une licence si vous souhaitez le p
